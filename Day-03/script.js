@@ -20,7 +20,7 @@ import ReactDOM from "react-dom/client";
 //React element
 const jsxHeading = (
   <h1 className="head" tabIndex="5">
-    Start React 🚀 with JSX, React element
+    Start React 🚀 with JSX, React element 
   </h1>
 );
 
@@ -33,7 +33,7 @@ const jsxHeading = (
 const Title = () => {
   return (
     <h1 className="head" tabIndex="5">
-      Start React 🚀 Component Composition
+      Start React Day-03🚀 Component Composition
     </h1>
   );
 };
