@@ -1,0 +1,108 @@
+/* General Page Styling */
+.menu {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu:hover {
+    transform: scale(1.02);
+}
+
+/* Heading Style */
+.menu h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #222;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #666;
+}
+
+/* Menu List Styling */
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px 0;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.menu-item:hover {
+    background: #f1f1f1;
+    transform: translateX(8px);
+}
+
+/* Item Image */
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Item Information */
+.menu-item-info {
+    flex-grow: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.menu-item-info h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #222;
+}
+
+.menu-item-info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Add Button */
+.add-button {
+    background: #FF971D; /* Soft green instead of orange */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-button:hover {
+    background:#ff9f43;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
