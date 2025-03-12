@@ -298,3 +298,53 @@
 .restro-container a:visited {
     color: inherit; /* Ensure visited links don't change color */
 }
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.user-card {
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 151, 29, 0.4);
+    max-width: 320px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 151, 29, 0.5);
+    background: var(--hover-color);
+}
+
+.user-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.avtar{
+    height: 170px;
+    width: 175px;
+    border-radius: 50%;
+}
