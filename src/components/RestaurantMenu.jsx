@@ -1,13 +1,21 @@
-import { useState, useEffect } from "react";
+
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../utils/constants";
+import useRestraurantMenu from "../utils/useRestraurantMenu";
 import "./menu.css";
 
 const RestaurantMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
+  // const [resInfo, setResInfo] = useState(null);
 
-  const {resId} = useParams();
+  const { resId } = useParams();
+
+  const resInfo = useRestraurantMenu(resId);  //Custom Hook
+
+  /*
+
+  useEffect(() => {
+    fetchMenu();
+  }, []);
 
   const fetchMenu = async () => {
     try {
@@ -22,9 +30,7 @@ const RestaurantMenu = () => {
     }
   };
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
+*/
 
   if (!resInfo) return <Shimmer />;
 

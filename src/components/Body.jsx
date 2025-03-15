@@ -2,6 +2,7 @@ import Restrocard from "./RestroCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 
@@ -33,6 +34,15 @@ const Body = () => {
     setListOfResturant(restaurantList);
     setFilteredResturant(restaurantList);
   };
+
+  const internetStatus = useOnlineStatus(); //Custom Hook
+
+  if(internetStatus === false)
+  {
+    return(
+      <h1>Check Your Internet Connection!</h1>
+    )
+  }
 
   return !listOfResturants || listOfResturants.length === 0 ? (
     <Shimmer />
