@@ -136,3 +136,16 @@ Hook in React
     🟢 Faster Initial Load 🚀 - The app loads only essential components first.
     🟢 Reduces Bundle Size 📦 - Loads components only when they are needed.
     🟢 Better User Experience 🎯 - Displays a loading state instead of freezing the page.
+
+## Day - 10(Learning):🚀
+
+  - it is all about Styling the app using "Talwind" CSS framework.
+
+
+
+## Day - 11(Learning):🚀
+
+  - Higher Order Component:
+      -  It will take a component and return a component.
+      -  Along with it will add some extra features.
+      

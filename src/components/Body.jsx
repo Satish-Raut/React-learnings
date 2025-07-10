@@ -1,10 +1,8 @@
-import Restrocard from "./RestroCard";
+import Restrocard, { withVegLabel } from "./RestroCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
-
-
 
 const Body = () => {
   // Local State variable (Powerfull variable in React)
@@ -12,6 +10,10 @@ const Body = () => {
   const [filteredResturants, setFilteredResturant] = useState([]);
 
   const [searchText, setSearchText] = useState("");
+
+  const RestroCardVeg = withVegLabel(Restrocard);
+
+  console.log(listOfResturants);
 
   //If no dependecy array , then useEffect is called on every render
   useEffect(() => {
@@ -37,11 +39,8 @@ const Body = () => {
 
   const internetStatus = useOnlineStatus(); //Custom Hook
 
-  if(internetStatus === false)
-  {
-    return(
-      <h1>Check Your Internet Connection!</h1>
-    )
+  if (internetStatus === false) {
+    return <h1>Check Your Internet Connection!</h1>;
   }
 
   return !listOfResturants || listOfResturants.length === 0 ? (
@@ -101,7 +100,13 @@ const Body = () => {
       <div className="restro-container">
         {filteredResturants.map((restro) => (
           <Link to={"/restaurants/" + restro.info.id} key={restro.info.id}>
-            <Restrocard restrodata={restro} />
+
+            {restro.info.veg ? (
+              <RestroCardVeg restrodata={restro} />
+            ) : (
+              <Restrocard restrodata={restro} />
+            )}
+            
           </Link>
         ))}
       </div>

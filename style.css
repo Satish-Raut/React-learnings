@@ -348,3 +348,27 @@ h2 {
     width: 175px;
     border-radius: 50%;
 }
+
+   
+  /* .veg-card {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .veg-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #008000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+   */

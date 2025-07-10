@@ -1,6 +1,7 @@
 
 import { CDN_URL } from "../utils/constants";
 
+
 const Restrocard = (props) => {
   const { restrodata } = props;
 
@@ -21,6 +22,35 @@ const Restrocard = (props) => {
       <h4>{sla?.deliveryTime} minutes</h4>
     </div>
   );
+};
+
+// Higher order component
+
+// input -> RestraurantCard = VegRestroCard
+
+export const withVegLabel = (Restrocard) => {
+  return (props) => {
+    return (
+      <div style={{ position: "relative", display: "inline-block" }}>
+        <span
+          style={{
+            position: "absolute",
+            top: "8px",
+            left: "8px",
+            backgroundColor: "green",
+            color: "white",
+            padding: "4px 8px",
+            borderRadius: "4px",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          Veg
+        </span>
+        <Restrocard {...props} />
+      </div>
+    );
+  };
 };
 
 

@@ -21,13 +21,16 @@
   "devDependencies": {
     "@babel/preset-react": "^7.26.3",
     "parcel": "^2.13.3",
-    "process": "^0.11.10"
+    "postcss": "^8.5.3",
+    "process": "^0.11.10",
+    "tailwindcss": "^4.0.14"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^3.0.1"
   },
   "browserslist": [
     "last 2 versions"
