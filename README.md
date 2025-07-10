@@ -1,3 +1,37 @@
+# Food Ordering App
+
+This project is a React-based Food Ordering App designed to help you learn modern React concepts by building a real-world application. The app demonstrates component-based architecture, custom hooks, code splitting, and more. It features a restaurant listing, search functionality, detailed menus, and a responsive UI, making it a great learning resource for beginners React developers.
+
+## Getting Started (Process to Run this project in your device)
+
+Follow these steps to set up and run the project from scratch:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Satish-Raut/React-learnings
+   cd "Learnings By Creating Food Ordering App"
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+4. **Open the app in your browser:**
+   The app will typically run at [http://localhost:3000](http://localhost:3000) by default.
+
+
+
+
+
+
+---
+
 /\*\*
 
 - Header
@@ -39,6 +73,73 @@ Hook in React
 - useState()
   - Whenever the state variable is update react will Re-render the component.
 - useEffect()
+
+---
+
+## React Learning Notes: Day 1 to Day 11
+
+### Day 1: Introduction to React & Project Setup
+- What is React? Why use it?
+- Setting up a React project (using Create React App or Parcel).
+- Understanding the project structure.
+- Writing your first React component.
+- Rendering components to the DOM.
+
+### Day 2: JSX & Components
+- What is JSX? How does it differ from HTML?
+- Creating functional components.
+- Props: Passing data to components.
+- Component composition (nesting components).
+
+### Day 3: Styling in React
+- Inline styles vs. CSS files.
+- Using className instead of class.
+- Organizing styles for components.
+
+### Day 4: State & Events
+- Introduction to useState hook.
+- Managing local component state.
+- Handling user events (onClick, onChange).
+- Updating the UI based on state.
+
+### Day 5: Lists & Conditional Rendering
+- Rendering lists with map().
+- Using keys in lists.
+- Conditional rendering (if/else, ternary, &&).
+
+### Day 6: useEffect & Side Effects
+- Introduction to useEffect hook.
+- Fetching data from APIs.
+- useEffect dependency array.
+- Cleaning up effects.
+
+### Day 7: Routing in React
+- Introduction to React Router.
+- Setting up routes and navigation.
+- Route parameters and nested routes.
+- Handling 404 pages.
+
+### Day 8: Class Components & Lifecycle Methods
+- Creating class components.
+- Using state and props in class components.
+- Lifecycle methods: constructor, render, componentDidMount, componentDidUpdate, componentWillUnmount.
+- Differences between class and functional components.
+
+### Day 9: Custom Hooks & Code Splitting
+- Creating and using custom hooks (e.g., useRestraurantMenu, useOnlineStatus).
+- Optimizing with custom hooks.
+- Code splitting: React.lazy and Suspense.
+- Benefits of chunking and lazy loading.
+
+### Day 10: Styling with Tailwind CSS
+- Installing and configuring Tailwind CSS.
+- Using utility classes for rapid styling.
+- Responsive design with Tailwind.
+
+### Day 11: Higher Order Components (HOC)
+- What is a Higher Order Component?
+- Creating and using HOCs to add features to components.
+- Example: Adding a “Veg” label to restaurant cards.
 
 ---
 
